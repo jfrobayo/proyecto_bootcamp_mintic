@@ -3,7 +3,7 @@
 ## Introducción
 El proyecto aborda el análisis de los accidentes de tránsito del Municipio de Fusagasugá utilizando los datos históricos para identificar patrones y tendencias que puedan ser útiles para implementar estrategias de seguridad vial. A través del análisis de datos se pretende crear un modelo de predicción que permita a los interesados tomar decisiones, acciones y estrategias para prevenir la ocurrencia de estos. Algunos aspectos relevantes dentro del análisis son el tipo de accidente, el día, la clase de accidente y gravedad. Los resultados del análisis y el modelo como tal permitirán proponer medidas efectivas para reducir el número de accidentes y la seguridad vial del municipio de Fusagasugá.
 ## Objetivo General:
-Desarrollar un modelo de aprendizaje supervisado utilizando regresión lineal para predecir la accidentabilidad en el municipio de Fusagasugá durante el año 2024, con el fin de proporcionar información para la toma de decisiones en la gestión de seguridad vial.
+Desarrollar un modelo de aprendizaje supervisado utilizando regresión lineal para predecir la hora en la que posiblemente ocurriran los accidentes en el municipio de Fusagasugá durante el año 2024, con el fin de proporcionar información para la toma de decisiones en la gestión de seguridad vial.
 ### Objetivos Especificos:
 1. Identificar las principales clases de accidemtes que ocurren en el Municipio así como la frecuencia de las mismas a fin de obtener información clara respecto de las que mas afectan la accidentalidad. 
 2. Mapear el impacto en la salud de las personas de la accidentalidad a partir de los datos obtenidos en la categoría Gravedad.
@@ -11,7 +11,7 @@ Desarrollar un modelo de aprendizaje supervisado utilizando regresión lineal pa
 4. Realizar la predicción de accidentes en el año 2024 identificando las horas en que ocurriran los accidentes de tránsito.
 ## Delimitación del Proyecto
 ### Alcance: 
-Este proyecto analizará los datos de accidentalidad en el municipio de Fusagasugá entre los años 2019 y 2023. El análisis se  centrará en identificar los factores que influyen en la accidentalidad del municipio y definir el modelo predictivo del año 2024. 
+Este proyecto analizará los datos de accidentalidad en el municipio de Fusagasugá entre los años 2019 y 2023. El análisis se  centrará en identificar los factores que influyen en la accidentalidad del municipio y definir el modelo predictivo del año 2024 respecto a la hora de ocurrencia. 
 ### Fuentes de Datos: 
 CSV de Datos Abiertos: “Accidentes de Tránsito registrados en el municipio de Fusagasugá”, por la Secretaría de Movilidad de la Alcaldía del municipio de Fusagasugá.
 ### Marco Temporal: 
@@ -40,7 +40,7 @@ En este paso se realiza análisis exploratorio realizado sobre la base de datos 
 ## Limpieza de los Datos:
 En el proceso de limpieza de los datos en el dataframe de accidentes de tránsito se eliminan columnas innecesarias, unifica valores en ciertas columnas, ajusta formatos de fecha y hora y renombra columnas para mayor claridad. 
 ### Las columnas que fueron depuradas son: 
-'Informes Policiales de Accidentes de Tránsito (IPAT) ', 'Dirección', 'Barrio', 'Comuna', 'Corregimiento', 'Hipótesis',                   'Hipótesis 2', 'Motocicleta', 'Mes'] 
+'Informes Policiales de Accidentes de Tránsito (IPAT) ','Latitud', 'Longitud', 'Dirección', 'Barrio', 'Comuna', 'Corregimiento', 'Hipótesis',                   'Hipótesis 2', 'Motocicleta', 'Mes'] 
 ### Los datos que se unificaron o reemplazaron corresponden a la columna Clase_accidente y Gravedad respectivamente son: 
 CAIDA OCUPANTE': 'CAIDA OCUPANTE',
         'CAÍDA': 'CAIDA OCUPANTE',
